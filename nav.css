@@ -68,7 +68,7 @@ body {
       left: 4%;
     }
   }
-  @media (max-width: 600px){
+  @media (max-width: 860px){
     nav img{
       left: 4%;
       top: 5px;
@@ -78,7 +78,7 @@ body {
       font-size: 17px;
     }
   }
-  @media (max-width: 600px){
+  @media (max-width: 860px){
     label #btn{
       display: block;
     }
@@ -109,4 +109,34 @@ body {
     #check:checked ~ label #cancel{
       display: block;
     }
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .container img {
+    width: 400px;
+    height: 450px;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: grey;
   }
