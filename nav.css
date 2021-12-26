@@ -80,7 +80,7 @@ body {
   }
   @media (max-width: 860px){
     label #btn{
-      display: inline-flex;
+      display: block;
     }
     ul{
       position: absolute;
@@ -105,7 +105,7 @@ body {
       left: 0;
     }
     #check:checked ~ #btn{
-      display: none;
+      display: block;
     }
     #check:checked ~ label #cancel{
       display: none;
@@ -124,9 +124,9 @@ body {
   }
   
   .container .btn {
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: black;
@@ -140,5 +140,5 @@ body {
   }
   
   .container .btn:hover {
-    background-color: grey;
+    background-color: black;
   }
