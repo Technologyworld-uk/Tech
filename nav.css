@@ -23,7 +23,7 @@ body {
     margin-right: 25px;
   }
   nav ul li{
-    display: inline-block;
+    display:  inline-block;
     line-height: 80px;
     margin: 0 15px;
   }
@@ -80,10 +80,10 @@ body {
   }
   @media (max-width: 860px){
     label #btn{
-      display: block;
+      display: inline-flex;
     }
     ul{
-      position: fixed;
+      position: absolute;
       width: 100%;
       height: 100vh;
       background: #34495e;
@@ -91,6 +91,7 @@ body {
       left: -100%;
       text-align: center;
       transition: all .5s;
+      z-index: 9999;
     }
     nav ul li{
       display: block;
@@ -107,18 +108,19 @@ body {
       display: none;
     }
     #check:checked ~ label #cancel{
-      display: block;
+      display: none;
     }
   }
 
   .container {
     position: relative;
-    width: 100%;
-  }
   
-  .container img {
-    width: 400px;
-    height: 450px;
+    background-color: grey;
+  width: 300px;
+  border: 10px solid black;
+  padding: 50px;
+  margin: 20px;
+  text-align:center;
   }
   
   .container .btn {
